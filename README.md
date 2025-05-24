@@ -1,9 +1,10 @@
-#  EX-1 Mean and variance of a discrete  distribution
-### DATE:
+## EXP-01 Mean and variance of a discrete  distribution
+## DATE: 
 
 # Aim : 
 
 To find mean and variance of arrival of objects from the feeder using probability distribution
+
 
 # Software required :  
 
@@ -47,31 +48,15 @@ It shows the distance of a random variable from its mean. It is calcualted as
 ![image](https://user-images.githubusercontent.com/103921593/229993174-5b67e57e-3e01-4ac4-9f83-410a932b22bf.png)
 
 # Program :
-import numpy as np<br>
-l=[int(i) for i in input().split()]<br>
-n=len(l); M=max(l)<br>
-x=list();f=list()<br>
-for i in range (M+1):<br>
-    c=0<br>
-    for j in range (n):<br>
-        if l[j]==i:<br>
-            c=c+1<br>
-    f.append(c)<br>
-    x.append(i)<br>
-sf=np.sum(f)<br>
-p=list()<br>
-for i in range(M+1):<br>
-    p.append(f[i]/sf)<br>
-mean =np.inner(x,p)<br>
-EX2=np.inner(np.square(x),p)<br>
-var=EX2-mean**2<br>
-SD=np.sqrt(var)<br>
-print("The mean arrival rate is %.3f"%mean)<br>
-print("The variance of arrival from feeder is %.3f"%var)<br>
-print("The standard deviation of arrival from feeder is %.3f"%SD)<br>
+![Screenshot 2024-12-21 110649](https://github.com/user-attachments/assets/5edd5813-e7bf-4aee-bd2a-e7b53bca686c)
+
+## DEVELOPED BY : MANOKARTHICK.S
+## REGISTER NUMBER : 212222230077
+
 # Output : 
-![image](https://github.com/Aswinth21/Mean-and-Variance/assets/120236638/06963656-a3ba-4f15-b566-eb4a74baf028)
+![Screenshot 2024-12-21 110712](https://github.com/user-attachments/assets/181b299b-0d5f-4a86-b59b-d1519d1170f9)
 
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
+
 
